@@ -313,11 +313,11 @@ public class Transaction extends javax.swing.JFrame {
    modeltr.setService(service);
    
    //abstraksi
-   LogicTr logictr = new LogicTr();
+   LogicTr logictr = new Logic2();
 
    //polymorphism
    int service1 = logictr.returnService(modeltr);
-   
+
    int weight = Integer.parseInt(tf_weight.getText());
        
    int subtotal = service1*weight;
@@ -384,7 +384,7 @@ evt.consume();
    modeltr.setService(service);
    
    //abstraksi
-   LogicTr logictr = new LogicTr();
+   LogicTr logictr = new Logic2();
    
    
    int service1 = logictr.returnService(modeltr);
